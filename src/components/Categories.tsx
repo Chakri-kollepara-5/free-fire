@@ -3,6 +3,7 @@ import { Users, Target, Zap } from 'lucide-react';
 interface Category {
   title: string;
   mode: string;
+  prize: string; // ⭐ NEW
   icon: 'squad' | 'duo' | 'clash';
   link: string;
   gradient: string;
@@ -14,6 +15,7 @@ const categories: Category[] = [
   {
     title: 'Full Map',
     mode: 'Squad',
+    prize: '₹800',
     icon: 'squad',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLScAztKSaJ6HrayVE22DU1fFva12deg9R6ozYwmqkx1SrvHJQA/viewform?usp=header',
     gradient: 'from-green-500/20 to-emerald-600/20',
@@ -23,6 +25,7 @@ const categories: Category[] = [
   {
     title: 'Full Map',
     mode: 'Duo',
+    prize: '₹500',
     icon: 'duo',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSdY1_UNpvA6Tj_4XXxR4gjGabGWATqajXPXEqrN3Cj_U6wXLw/viewform?usp=header',
     gradient: 'from-pink-500/20 to-rose-600/20',
@@ -32,6 +35,7 @@ const categories: Category[] = [
   {
     title: 'Clash Squad',
     mode: '4v4',
+    prize: '₹400',
     icon: 'clash',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLScwT1jtNkW5IyJ592AmDqm_4sNl4RhfrNjzeW4irrzofRj5aA/viewform?usp=header',
     gradient: 'from-cyan-500/20 to-teal-600/20',
@@ -41,6 +45,7 @@ const categories: Category[] = [
   {
     title: 'Clash Squad',
     mode: '3v3',
+    prize: '₹300',
     icon: 'clash',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSeniZyYfJuaSBFZOIDfXRIELC4TYD9Q0XwLNBQzTv7fjv5XkQ/viewform?usp=header',
     gradient: 'from-fuchsia-500/20 to-purple-600/20',
@@ -50,6 +55,7 @@ const categories: Category[] = [
   {
     title: 'Clash Squad',
     mode: '2v2',
+    prize: '₹250',
     icon: 'clash',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLScVslHT2DCLXKzjohlvMN0ALeDeXGRF_byrScjVhOXBYJZpvA/viewform?usp=header',
     gradient: 'from-lime-500/20 to-green-600/20',
@@ -59,6 +65,7 @@ const categories: Category[] = [
   {
     title: 'Clash Squad',
     mode: '1v1',
+    prize: '₹150',
     icon: 'clash',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSeHOl9siJA-wmNJoaucDfuvOsv0T0ikbxAK5PsDld5WV1QZzg/viewform?usp=header',
     gradient: 'from-red-500/20 to-rose-600/20',
@@ -157,7 +164,7 @@ const Categories = () => {
                 </h3>
 
                 {/* Mode */}
-                <div className="flex items-center justify-center gap-2 mb-6">
+                <div className="flex items-center justify-center gap-2 mb-3">
                   <div className="h-px w-10 bg-gradient-to-r from-transparent to-gray-600"></div>
                   <p className={`
                     text-3xl font-black 
@@ -169,6 +176,11 @@ const Categories = () => {
                   </p>
                   <div className="h-px w-10 bg-gradient-to-l from-transparent to-gray-600"></div>
                 </div>
+
+                {/* ⭐ PRIZE */}
+                <p className="text-center text-lg font-bold text-yellow-300 mb-6">
+                  🏆 Prize: {category.prize}
+                </p>
 
                 {/* CTA */}
                 <p className="text-center text-sm font-semibold text-gray-400 group-hover:text-white transition-colors tracking-wide">
