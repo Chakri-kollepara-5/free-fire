@@ -32,7 +32,7 @@ const Info = () => {
             <div className="flex items-center justify-center w-16 h-16 bg-pink-500/20 rounded-full mb-6 group-hover:bg-pink-500/30 transition-colors">
               <Trophy className="w-8 h-8 text-pink-400" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Prize Pool</h3>
+            <h3 className="text-xl font-bold text-white mb-2">Prize Pool upto</h3>
             <p className="text-3xl font-black text-transparent bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text">
               Up to ₹1300/-
             </p>

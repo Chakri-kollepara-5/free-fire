@@ -74,7 +74,7 @@ const Hero = () => {
             <p className="text-white text-lg font-bold">29-12-2025</p>
           </div>
           <div className="bg-gray-800/40 backdrop-blur-sm border border-pink-500/20 rounded-lg p-4">
-            <p className="text-pink-400 text-sm font-semibold mb-1">Prize Pool</p>
+            <p className="text-pink-400 text-sm font-semibold mb-1">Prize Pool upto</p>
             <p className="text-white text-lg font-bold">₹1300/-</p>
           </div>
           <div className="bg-gray-800/40 backdrop-blur-sm border border-green-500/20 rounded-lg p-4">
